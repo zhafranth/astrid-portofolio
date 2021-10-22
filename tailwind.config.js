@@ -1,6 +1,7 @@
 module.exports = {
+  mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -19,7 +20,15 @@ module.exports = {
           },
           "100%": {
             opacity: "1",
-            transform: "translateX(0)",
+            transform: "translateY(0)",
+          },
+        },
+        moveInTop: {
+          "0%": {
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            transform: "translateY(0)",
           },
         },
         moveInLeft: {
@@ -39,6 +48,7 @@ module.exports = {
       animation: {
         "fade-bottom": "moveInBottom 0.7s ease-in-out",
         "fade-left": "moveInLeft 0.7s ease-in-out",
+        "fade-top": "moveInTop 1s ease-in-out",
         button: "moveInBottom 0.7s ease-in-out 0.4s",
       },
     },
