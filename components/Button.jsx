@@ -1,8 +1,11 @@
 import React from "react";
 
-const Button = ({ children }) => {
+const Button = ({ children, className }) => {
   return (
-    <button className="rounded-full text-white px-6 py-3 bg-secondary hover:bg-opacity-80">
+    <button
+      className={`rounded-full text-white px-12 py-3 bg-secondary hover:bg-opacity-80 ${className} transition-all`}
+      style={{ animationFillMode: "backwards" }}
+    >
       {children}
     </button>
   );

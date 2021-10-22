@@ -11,6 +11,36 @@ module.exports = {
         black: "#262626",
         gray: "#D8D8D8",
       },
+      keyframes: {
+        moveInBottom: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(4rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        moveInLeft: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-10rem)",
+          },
+          "80%": {
+            transform: "translateX(1rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translate(0)",
+          },
+        },
+      },
+      animation: {
+        "fade-bottom": "moveInBottom 0.7s ease-in-out",
+        "fade-left": "moveInLeft 0.7s ease-in-out",
+        button: "moveInBottom 0.7s ease-in-out 0.4s",
+      },
     },
     fontFamily: {
       roboto: ["Roboto , sans-serif"],
