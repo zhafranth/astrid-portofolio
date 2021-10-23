@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import { StateProvider } from "../context/darkModeContext";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +9,9 @@ function MyApp({ Component, pageProps }) {
         <title>Astrid Portofolio</title>
         <meta name="description" content="Astrid Portofolio" />
       </Head>
-      <Component {...pageProps} />
+      <StateProvider>
+        <Component {...pageProps} />
+      </StateProvider>
     </>
   );
 }

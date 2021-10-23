@@ -13,11 +13,11 @@ const Hero = () => {
           <h5 className="font-ibm-serif text-md md:text-xl font-semibold text-secondary animate-fade-bottom">
             Astrid Shofi Dzihni R
           </h5>
-          <h2 className="text-4xl md:text-6xl font-ibm-serif font-bold leading-normal md:leading-relaxed mb-3 md:mb-8 animate-fade-bottom">
+          <h2 className="text-4xl md:text-6xl font-ibm-serif font-bold leading-normal md:leading-relaxed mb-3 md:mb-8 animate-fade-bottom text-black dark:text-white transition-all duration-500">
             Data Engineer Based in
             <span className="text-primary"> Jakarta</span>
           </h2>
-          <p className="text-sm md:text-lg font-light leading-normal md:leading-loose mb-12 animate-fade-bottom">
+          <p className="text-sm md:text-lg font-light leading-normal md:leading-loose mb-12 animate-fade-bottom text-black dark:text-white transition-all duration-500">
             To be a Data Engineer is so amazing. I can help everyone build their
             bussiness, it such happines for me. So, let me to help you
           </p>
